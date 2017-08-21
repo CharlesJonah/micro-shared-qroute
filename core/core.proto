@@ -11,7 +11,7 @@ message ServiceVendorRequest {
   string vendor_location = 4;
   string vendor_services = 5;
   string vendor_email = 6;
-  string vendor_phone = 7
+  string vendor_phone = 7;
   string updated_at = 8;
   string created_at = 9;
 }
