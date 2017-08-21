@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package core;
+
+message Empty {}
+
+message ServiceVendorRequest {
+  string vendor_id = 1;
+  string vendor_name = 2;
+  string vendor_description = 3;
+  string vendor_location = 4;
+  string vendor_services = 5;
+  string vendor_email = 6;
+  string vendor_phone = 7
+  string updated_at = 8;
+  string created_at = 9;
+}
+
+message ServiceVendorResponse {
+  string message = 1;
+}

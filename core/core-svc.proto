@@ -1,0 +1,23 @@
+syntax = "proto3";
+package core;
+import "google/api/annotations.proto";
+import "core/core.proto";
+
+/*
+Core Service
+
+*/
+service CoreService {
+
+  /*
+
+  Creates a  service vendor
+
+    */
+    rpc CreateVendorService (pulse.ServiceVendorRequest) returns (pulse.ServiceVendorResponse) {
+      option (google.api.http) = {
+        post: "/api/v1/qroute/servicevendor"
+        body: "*"
+      };
+    }
+  }
